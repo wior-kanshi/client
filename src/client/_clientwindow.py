@@ -6,6 +6,7 @@ from PyQt4.QtNetwork import QAbstractSocket
 
 import config
 import connectivity
+import leaderboards
 from base import Client
 from config import Settings
 import chat
@@ -500,7 +501,8 @@ class ClientWindow(FormClass, BaseClass):
         chat.CHAT_COLORS = json.loads(util.readfile("client/colors.json"))
 
         # build main window with the now active client
-        self.ladder = stats.Stats(self)
+        self.ladder = leaderboards.View()
+        self.ladderTab.layout().addWidget(self.ladder)
         self.games = games.Games(self)
         self.tourneys = tourneys.Tourneys(self)
         self.vault = vault.MapVault(self)

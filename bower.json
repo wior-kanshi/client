@@ -1,0 +1,22 @@
+{
+  "name": "client",
+  "homepage": "https://github.com/FAForever/client",
+  "authors": [
+    "Sheeo <sheeo@faforever.com>"
+  ],
+  "description": "Forged Alliance Forever client",
+  "main": "",
+  "moduleType": [],
+  "license": "GPLv3",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "react": "^15.0.1"
+  }
+}

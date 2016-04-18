@@ -2,6 +2,7 @@
 *.swp
 *.log
 *~
+*.js
 *.pyo
 *.pyd
 *.project
@@ -24,3 +25,5 @@ client_venv
 *.egg-info
 .vagrant
 .cache
+bower_components/
+typings/
